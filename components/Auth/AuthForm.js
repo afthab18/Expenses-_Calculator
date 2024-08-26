@@ -1,15 +1,12 @@
 import { useState } from "react";
 import { StyleSheet, View } from "react-native";
-
 import Button from "../ui/Button";
 import Input from "./Input";
-
 function AuthForm({ isLogin, onSubmit, credentialsInvalid }) {
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredConfirmEmail, setEnteredConfirmEmail] = useState("");
   const [enteredPassword, setEnteredPassword] = useState("");
   const [enteredConfirmPassword, setEnteredConfirmPassword] = useState("");
-
   const {
     email: emailIsInvalid,
     confirmEmail: emailsDontMatch,
